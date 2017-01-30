@@ -2,10 +2,11 @@ package main.java.services;
 
 import java.util.ArrayDeque;
 import java.util.Comparator;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
-import edu.princeton.cs.algs4.MinPQ;
 import main.java.model.BoardAStar;
+
 
 /**
  * Find a solution to the initial board (using the A* algorithm)
@@ -14,7 +15,7 @@ import main.java.model.BoardAStar;
 public final class AStarSolver implements ISolver {
 
     private int moves;
-    private MinPQ<BoardAStar> queue;
+    private PriorityQueue<BoardAStar> queue;
     private Queue<BoardAStar> previous = new ArrayDeque<>();
 
     /**
@@ -25,8 +26,8 @@ public final class AStarSolver implements ISolver {
      */
     public AStarSolver(BoardAStar initial) {
         moves = 0;
-        queue = new MinPQ<>(new BoardComparator());
-        queue.insert(initial);
+        queue = new PriorityQueue<>(new BoardComparator());
+        queue.add(initial);
     }
 
     /**
@@ -40,9 +41,9 @@ public final class AStarSolver implements ISolver {
                         .println("Knight cannot move to the end of the board!");
                 return -1;
             }
-            BoardAStar min = queue.delMin();
+            BoardAStar min = queue.remove();
             while (!queue.isEmpty()) {
-                queue.delMin();
+                queue.remove();
             }
             BoardAStar prev = null;
             if (previous.size() >= 1)
@@ -57,7 +58,7 @@ public final class AStarSolver implements ISolver {
             for (BoardAStar item : b) {
                 if (prev == null
                         || (!prev.equals(item) && !previous.contains(item))) {
-                    queue.insert(item);
+                    queue.add(item);
                 }
             }
         }
