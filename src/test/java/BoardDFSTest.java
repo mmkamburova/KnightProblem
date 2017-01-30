@@ -1,6 +1,6 @@
-package src.test.java;
+package test.java;
 
-import src.main.java.model.BoardDFS;
+import main.java.model.BoardDFS;
 
 import static org.junit.Assert.assertEquals;
 

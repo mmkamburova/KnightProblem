@@ -1,10 +1,10 @@
-package src.test.java;
+package test.java;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import src.main.java.model.BoardAStar;
+import main.java.model.BoardAStar;
 
 public class BoardAStarTest {
     @Test

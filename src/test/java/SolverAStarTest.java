@@ -1,9 +1,9 @@
-package src.test.java;
+package test.java;
 
 import static org.junit.Assert.assertEquals;
 
-import src.main.java.model.BoardAStar;
-import src.main.java.services.AStarSolver;
+import main.java.model.BoardAStar;
+import main.java.services.AStarSolver;
 
 public class SolverAStarTest extends SolverTest {
 

@@ -1,4 +1,4 @@
-package src.main.java.services;
+package main.java.services;
 
 public interface ISolver {
 

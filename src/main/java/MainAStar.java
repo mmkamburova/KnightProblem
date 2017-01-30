@@ -1,7 +1,7 @@
-package src.main.java;
+package main.java;
 
-import src.main.java.model.BoardAStar;
-import src.main.java.services.AStarSolver;
+import main.java.model.BoardAStar;
+import main.java.services.AStarSolver;
 
 /**
  * Tests A* algorithm

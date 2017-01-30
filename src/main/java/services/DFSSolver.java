@@ -1,4 +1,4 @@
-package src.main.java.services;
+package main.java.services;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-import src.main.java.model.BoardDFS;
+import main.java.model.BoardDFS;
 
 /**
  * Find a solution to the initial board (using the DFS algorithm)

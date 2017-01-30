@@ -1,11 +1,11 @@
-package src.main.java.services;
+package main.java.services;
 
 import java.util.ArrayDeque;
 import java.util.Comparator;
 import java.util.Queue;
 
 import edu.princeton.cs.algs4.MinPQ;
-import src.main.java.model.BoardAStar;
+import main.java.model.BoardAStar;
 
 /**
  * Find a solution to the initial board (using the A* algorithm)

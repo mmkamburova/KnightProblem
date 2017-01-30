@@ -1,7 +1,7 @@
-package src.main.java;
+package main.java;
 
-import src.main.java.model.BoardDFS;
-import src.main.java.services.DFSSolver;
+import main.java.model.BoardDFS;
+import main.java.services.DFSSolver;
 
 /**
  * Tests DFS algorithm

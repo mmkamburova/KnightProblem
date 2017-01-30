@@ -1,9 +1,9 @@
-package src.test.java;
+package test.java;
 
 import static org.junit.Assert.assertEquals;
 
-import src.main.java.model.BoardDFS;
-import src.main.java.services.DFSSolver;
+import main.java.model.BoardDFS;
+import main.java.services.DFSSolver;
 
 public class SolverDFSTest extends SolverTest {
 
